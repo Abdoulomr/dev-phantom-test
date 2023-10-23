@@ -13,13 +13,14 @@ export default function InputTypeSearch({
   return (
     <div className="flex items-center gap-2 border-[1px] border-[#A6A6A6] px-2 rounded-lg  w-fit">
       <Image
+        className="bg-transparent"
         src="assets/search-icon.svg"
         alt="Search Icon"
         width={16}
         height={15}
       />
       <input
-        className="text-xs h-full py-2 md:w-[300px] outline-none"
+        className="text-xs h-full py-2 md:w-[300px] bg-transparent outline-none"
         value={value}
         onChange={changeHandler}
         type="search"
