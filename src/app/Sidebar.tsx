@@ -97,7 +97,7 @@ export default function Sidebar({
           {displayLinks}
         </ul>
 
-        <div className="w-full">
+        <div className={`${nunito.className} w-full`}>
           <div className=" !w-full box-border flex justify-start items-center gap-[10px] px-[30px] py-2 text-[#818181] hover:cursor-pointer border-l-4 border-[#F1FFFA]">
             <Image
               priority
