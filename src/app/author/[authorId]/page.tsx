@@ -27,10 +27,10 @@ export default async function AuthorPage({
 }) {
   const data = await getData(params.authorId);
   return (
-    <div className="flex flex-col items-start mb-3 bg-[#FFFFFE] max-w-7xl mx-auto rounded-md p-4 w-full shadow-md gap-6">
+    <div className="flex flex-col items-start box-border overflow-hidden mb-3 bg-[#FFFFFE] max-w-7xl mx-auto rounded-md p-4 w-full shadow-md gap-6">
       {data.length > 0 ? (
         <div className="flex items-start flex-col gap-4 justify-between w-full">
-          <div className="flex items-start justify-between w-full">
+          <div className="flex  items-start justify-between w-full">
             <div className="flex items-start gap-1 justify-center w-fit h-full">
               <Image
                 src="/profile.png"
@@ -50,7 +50,7 @@ export default async function AuthorPage({
               Inviver
             </button>
           </div>
-          <div className="flex justify-between gap-10 w-full">
+          <div className="flex justify-around md:justify-between gap-10 flex-wrap md:flex-nowrap w-full">
             <div className="flex flex-col w-full justify-between gap-3 items-start">
               <div className="flex items-center w-full justify-between">
                 <small className="text-[#818181]">Genre</small>
