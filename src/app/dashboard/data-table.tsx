@@ -173,11 +173,11 @@ export function DataTable<TData, TValue>({
                       <TableCell
                         key={cell.id}
                         onClick={() => {
-                          const id: any = cell.row.original;
+                          const itemId: any = cell.row.getValue("userId");
 
                           !cell.id.includes("_select") &&
                             !cell.id.includes("_actions") &&
-                            router.push(`/author/${id.id}`);
+                            router.push(`/author/${itemId}`);
                         }}
                       >
                         {flexRender(
