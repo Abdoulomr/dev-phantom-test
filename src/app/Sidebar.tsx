@@ -1,5 +1,5 @@
 "use client";
-import React, { Dispatch, SetStateAction, useState } from "react";
+import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -69,6 +69,14 @@ export default function Sidebar({
       </li>
     );
   });
+
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setSideBarVisible(!sideBarVisible);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <section
       className={`fixed flex z-50 flex-col items-center !px-0 top-0 transition-all duration-300 ease-in-out left-[-100%] md:left-0 w-[250px] h-full  bg-[#FFFFFE] ${
