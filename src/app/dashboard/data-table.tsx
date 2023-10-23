@@ -31,7 +31,6 @@ import { useRouter } from "next/navigation";
 import InputTypeSelect from "@/components/inputs/InputTypeSelect";
 import InputTypeSearch from "@/components/inputs/InputTypeSearch";
 import ButtonType from "@/components/inputs/ButtonType";
-import TableButton from "@/components/inputs/TableButton";
 import { nunito, poppins, roboto } from "@/utils/module";
 import { useEffect, useState } from "react";
 import InputTypeText from "@/components/inputs/InputTypeText";
@@ -39,10 +38,6 @@ import InputTypeText from "@/components/inputs/InputTypeText";
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
-}
-
-interface SyntheticEvent<T> {
-  currentTarget: EventTarget & T;
 }
 
 export function DataTable<TData, TValue>({

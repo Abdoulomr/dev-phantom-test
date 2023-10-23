@@ -128,7 +128,9 @@ export const columns: ColumnDef<Profile>[] = [
           <DropdownMenuContent className="bg-white" align="end">
             <DropdownMenuItem
               className="hover:cursor-pointer hover:bg-slate-50"
-              onClick={() => navigator.clipboard.writeText(user.id)}
+              onClick={() =>
+                navigator.clipboard.writeText(user.userId.toString())
+              }
             >
               Copy user ID
             </DropdownMenuItem>

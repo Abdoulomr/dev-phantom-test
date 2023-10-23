@@ -82,7 +82,7 @@ export default function Sidebar({
         }`}
       >
         <Image
-          className="rotate-90 font-bold"
+          className="rotate-90 w-auto h-auto font-bold"
           src="/arrow.svg"
           alt="arrow menu toggler icon"
           width={20}
