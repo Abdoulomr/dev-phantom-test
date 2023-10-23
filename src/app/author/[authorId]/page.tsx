@@ -72,11 +72,11 @@ export default async function AuthorPage({
               </div>
               <div className="flex items-center w-full justify-between">
                 <small className="text-[#818181]">Catégorie</small>
-                <span className="text-xs">Ile-de-france</span>
+                <span className="text-xs">Sneakers</span>
               </div>
               <div className="flex items-center w-full justify-between">
                 <small className="text-[#818181]">Taux de conversion</small>
-                <span className="text-xs">France</span>
+                <span className="text-xs">4%</span>
               </div>
             </div>
             <div className="flex flex-col w-full justify-around gap-3 items-start">
@@ -86,11 +86,11 @@ export default async function AuthorPage({
               </div>
               <div className="flex items-center w-full justify-between">
                 <small className="text-[#818181]">Catégorie</small>
-                <span className="text-xs">Ile-de-france</span>
+                <span className="text-xs">Sneakers</span>
               </div>
               <div className="flex items-center w-full justify-between">
                 <small className="text-[#818181]">Taux de conversion</small>
-                <span className="text-xs">France</span>
+                <span className="text-xs">4%</span>
               </div>
             </div>
             <div className="flex flex-col w-full justify-end gap-1 items-end">
