@@ -238,7 +238,7 @@ export function DataTable<TData, TValue>({
               disabled={!table.getCanPreviousPage()}
               className="text-[#15A36E]"
             >
-              Previous
+              Précédent
             </Button>
             <Button
               variant="outline"
@@ -247,7 +247,7 @@ export function DataTable<TData, TValue>({
               disabled={!table.getCanNextPage()}
               className="text-[#15A36E]"
             >
-              Next
+              Suivant
             </Button>
           </div>
         </div>
