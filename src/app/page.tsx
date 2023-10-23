@@ -1,7 +1,9 @@
 export default function Home() {
   return (
     <>
-      <h1>Landing page</h1>
+      <div className="mx-auto font-bold text-xl uppercase text-slate-600 mt-10">
+        Home page
+      </div>
     </>
   );
 }
